@@ -37,7 +37,7 @@
 		clocks = <&clk_cam_25m>;
 		pwdn-gpios = <&gpio1 RK_PB2 GPIO_ACTIVE_LOW>;
 		clock-names = "ext_cam_clk";
-		rockchip,camera-module-index = <0>;
+		rockchip,camera-module-index = <1>;
 		rockchip,camera-module-facing = "back";
 		rockchip,camera-module-name = "OKDO-5MP";
 		rockchip,camera-module-lens-name = "default";
