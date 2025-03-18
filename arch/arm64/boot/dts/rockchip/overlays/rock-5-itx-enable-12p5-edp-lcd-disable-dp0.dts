@@ -8,11 +8,11 @@
 
 / {
 	metadata {
-		title = "Enable Sharp LQ133T1JW01 Display on eDP and Disable DP0";
+		title = "Enable 12P5 Display on eDP and Disable DP0";
 		compatible = "radxa,rock-5-itx";
 		category = "display";
 		exclusive = "dp0", "edp0", "vp2";
-		description = "Enable Sharp LQ133T1JW01 display on eDP.
+		description = "Enable 12p5 display on eDP.
 This will disable DP0.";
 	};
 };
@@ -84,14 +84,14 @@ This will disable DP0.";
 		prepare-delay-ms = <100>;
 		enable-delay-ms = <100>;
 		bpc = <8>;
-		width-mm = <305>;
-		height-mm = <107>;
+		width-mm = <276>;
+		height-mm = <155>;
 		display-timings {
 			native-mode = <&timing0>;
 			timing0: timing0 {
-				clock-frequency = <237600000>;
-				hactive = <2560>;
-				vactive = <1440>;
+				clock-frequency = <140250000>;
+				hactive = <1920>;
+				vactive = <1080>;
 				hfront-porch = <80>;
 				hsync-len = <32>;
 				hback-porch = <48>;
