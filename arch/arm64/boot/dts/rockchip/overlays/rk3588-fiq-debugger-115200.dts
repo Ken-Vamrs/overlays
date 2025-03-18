@@ -1,0 +1,19 @@
+#include "rk3568-disable-fiq-debugger.dts"
+
+/ {
+	metadata {
+		title = "Modify FIQ Debugger Baudrate to 115200";
+		compatible = "rockchip,rk3588";
+		description = "Modify FIQ Debugger Baudrate to 115200.";
+	};
+};
+
+&fiq_debugger {
+	compatible = "rockchip,fiq-debugger";
+	rockchip,serial-id = <2>;
+	rockchip,wake-irq = <0>;
+	/* If enable uart uses irq instead of fiq */
+	rockchip,irq-mode-enable = <1>;
+	rockchip,baudrate = <115200>;  /* Only 115200 and 1500000 */
+	status = "okay";
+};
